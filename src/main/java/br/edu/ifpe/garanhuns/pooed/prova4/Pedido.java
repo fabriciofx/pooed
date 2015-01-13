@@ -11,20 +11,22 @@ public class Pedido {
 		this.cliente = cliente;
 	}
 
+	// Não precisava colocar os métodos gets e sets!	
 	public Cliente getCliente() {
 		return cliente;
 	}
 
+	public List<Item> getItens() {
+		return itens;
+	}
+	
+	// Estes métodos eram necessários!
 	public void adiciona(Item item) {
 		itens.add(item);
 	}
 
 	public void remove(Item item) {
 		itens.remove(item);
-	}
-
-	public List<Item> getItens() {
-		return itens;
 	}
 
 	public double total() {
@@ -35,10 +37,5 @@ public class Pedido {
 		}
 
 		return total;
-	}
-	
-	// Não precisa deste método. Só coloquei para efeitar!
-	public String toString() {
-		return String.format("", itens);
 	}
 }

@@ -11,6 +11,7 @@ public class Item {
 		this.preco = produto.getPreco();
 	}
 
+	// Não precisava colocar os métodos gets e sets!	
 	public Produto getProduto() {
 		return produto;
 	}
@@ -19,6 +20,7 @@ public class Item {
 		return quantidade;
 	}
 
+	// Já este método, era necessário!
 	public double getValor() {
 		return preco * quantidade;
 	}

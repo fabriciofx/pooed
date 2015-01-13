@@ -13,6 +13,7 @@ public class Cliente {
 		this.email = email;
 	}
 
+	// Não precisava colocar os métodos gets e sets!
 	public String getNome() {
 		return nome;
 	}

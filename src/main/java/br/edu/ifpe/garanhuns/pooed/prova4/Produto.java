@@ -11,6 +11,7 @@ public class Produto {
 		this.preco = preco;
 	}
 
+	// Não precisava colocar os métodos gets e sets!	
 	public String getNome() {
 		return nome;
 	}
