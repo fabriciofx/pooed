@@ -17,21 +17,22 @@ public class Corpo {
 	}
 
 	public void setCerebro(Cerebro cerebro) {
-		if (this.cerebro == null && cerebro != null) {
-			this.cerebro = cerebro;
-
-			if (cerebro.getCorpo() != this) {
-				cerebro.setCorpo(this);
-			}
-		} else if (this.cerebro != null && cerebro != null) {
-			this.cerebro.setCorpo(null);
-			this.cerebro = cerebro;
-
-			if (cerebro.getCorpo() != this) {
-				cerebro.setCorpo(this);
-			}
-		} else if (this.cerebro != null && cerebro == null) {
+		// Se for passado um objeto com null, zera a referência
+		// e interrompe a execução dos outros passos
+		if (cerebro == null) {
 			this.cerebro = null;
+			return;
+		}
+
+		if (this.cerebro != null) {
+			this.cerebro.setCorpo(null);
+		}
+
+		this.cerebro = cerebro;
+
+		// Evita a chamada recursiva
+		if (cerebro.getCorpo() != this) {
+			cerebro.setCorpo(this);
 		}
 	}
 
