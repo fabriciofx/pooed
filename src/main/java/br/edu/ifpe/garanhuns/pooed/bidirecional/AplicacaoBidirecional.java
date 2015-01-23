@@ -14,7 +14,13 @@ public class AplicacaoBidirecional {
 		System.out.println(einstein);
 
 		System.out.println("----------------");
-		
+
+		stallone.setCerebro(null);
+		System.out.println(stallone);
+		System.out.println(einstein);
+
+		System.out.println("----------------");
+				
 		stallone.setCerebro(hawking);
 		System.out.println(stallone);
 		System.out.println(hawking);
