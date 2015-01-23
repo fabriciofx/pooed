@@ -1,0 +1,14 @@
+Conta Corrente: conta utilizada para movimentar seu dinheiro com frequência,
+pode ser utilizada para receber salários, emitir ou receber depósitos em
+cheques e realizar transferências. Este tipo de conta não gera rendimentos ao
+dinheiro aplicado e possui tarifa para manutenção da conta.
+
+Conta Poupança: como o próprio nome já diz, a conta poupança serve para poupar
+o dinheiro. Não recebe salários ou emite cheques (mas pode receber depósitos
+em cheques). Não tem tarifas de manutenção e nem limites para aplicação. Serve
+como um tipo de investimento, já que gera juros sobre o dinheiro aplicado.
+
+Conta Salário: esta conta é específica para recebimento de salários do titular
+da conta. Recebe depósitos exclusivamente da empresa pagadora dos salários.
+Não pode emitir cheques ou realizar transferências, apenas saque. Não remunera
+o dinheiro aplicado e não possui tarifa de manutenção.
