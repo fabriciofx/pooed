@@ -20,7 +20,7 @@ fazer certas verificações, como:
 De acordo com [3] temos:
 
 > Uma exceção é um evento que ocorre durante a execução de
-um programa, que interrompe o fluxo normal de excecução das
+um programa, interrompendo o fluxo normal de excecução das
 instruções.
 
 
