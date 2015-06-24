@@ -1,10 +1,10 @@
-# Exceções
+# 1. Exceções
 
 Neste capítulo vamos estudar o conceito de **exceção**, que é
 uma importante ferramenta das linguagens de programação para o
 tratamento de erros em um programa de computador.
 
-## Motivação
+## 1.1 Motivação
 
 Frequentemente um desenvolvedor depara-se com a necessidade de
 fazer certas verificações, como:
@@ -15,7 +15,7 @@ fazer certas verificações, como:
 * Se um determinado parâmetro não é nulo (null);
 * Se uma determinada string não é vazia.
 
-## Definição
+## 1.2 Definição
 
 De acordo com [3] uma exceção pode ser definida como:
 
@@ -30,34 +30,45 @@ problema, como:
 * Onde aconteceu o problema;
 * Por que o problema aconteceu (se possível).
 
-## Sintaxe
+## 1.3 Sintaxe
 
 ```java
 try {
-  Intrução1;
-  Intrução2;
+  Instrução1;
+  Instrução2;
   ...
   InstruçãoN;
 } catch (TipoDeExceção1 nome1) {
-  Intrução1;
-  Intrução2;
+  Instrução1;
+  Instrução2;
   ...
   InstruçãoN;  
 } catch (TipoDeExceção2 nome2) {
-  Intrução1;
-  Intrução2;
+  Instrução1;
+  Instrução2;
   ...
   InstruçãoN;
+}
 .
 .
 .
+} catch (TipoDeExceçãoN nomeN) {
+  Instrução1;
+  Instrução2;
+  ...
+  InstruçãoN;
 } finally {
-  Intrução1;
-  Intrução2;
+  Instrução1;
+  Instrução2;
   ...
   InstruçãoN;
 }
 ```
+Observações:
+
+1. Só há apenas UM `try`;
+2. É possível ter quantos `catch()`;
+3. Só é possível ter UM `finally`.
 
 
 ## Tipos de Exceções
