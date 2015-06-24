@@ -64,11 +64,12 @@ try {
   InstruçãoN;
 }
 ```
+
 Observações:
 
-1. Só há apenas UM `try`;
-2. É possível ter quantos `catch()`;
-3. Só é possível ter UM `finally`.
+1. Só há apenas UM ```try```;
+2. É possível ter quantos ```catch()```;
+3. Só é possível ter UM ```finally```.
 
 
 ## Tipos de Exceções
