@@ -165,13 +165,13 @@ De acordo com [4] temos as seguintes definições para os termos acima:
 **Erro (Error)**: é um desvio do valor atual para o valor esperado. Representa o
 engano cometido por pessoas.
 
-**Falha (Fault)**: é um passo, processo ou definição de dados incorreta de um
+**Falta (Fault)**: é um passo, processo ou definição de dados incorreta de um
 programa de computador que o faz se comportar de maneira não intencional ou
 inesperada. É o resultado do *erro*.
 
 **Bug**: é uma evidência de falha no programa.
 
-**Fracasso (Failure)**: é a incapacidade de um sistema ou de um componente para
+**Falha (Failure)**: é a incapacidade de um sistema ou de um componente para
 executar suas funções exigidas, dentro dos requisitos de desempenho
 especificados. O fracasso ocorre quando uma falha é executada.
 
@@ -200,6 +200,26 @@ mensagem:
 ```
 O resultado de 5 + 3 = 2
 ```
+
+O que mostra que o programa falhou em fazer o que supostamente deveria fazer,
+isto é, era esperado que o programa somasse 5 + 3 produzindo como resposta o
+valor 8, mas o mesmo produziu como resposta o valor 2. Assim, detectamos uma
+*falha (failure)*.
+Como um fracasso foi detectado, um *defeito (defect)* pode ter sido levantado.
+Agora voltemos ao programa para analisá-lo onde está a *falta (fault)* do
+programa:
+
+```java
+resultado = valor1 - valor2;
+```
+
+Nesta linha há um sinal de `-` ao invés de um sinal de `+`. Assim a *falta* do
+no programa foi o sinal de `-`. Esta *falta* foi que desviou o programa da sua
+funcionalidade.
+O *erro* foi o engano de ter digitado `-` ao invés de `+`. Uma *falha* foi
+observada na correta execução de um programa. Neste caso também poderia ser
+dito que um *bug* foi encontrado.
+
 
 ## Referências
 
