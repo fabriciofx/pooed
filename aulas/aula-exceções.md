@@ -162,9 +162,55 @@ Pessoa ana = new Pessoa(null, null);
 é perfeitamente válida.
 
 
+## 1.8 Erro, Falha, Bug, Fracasso e Defeito
+
+De acordo com [4] temos as seguintes definições para os termos acima:
+
+*Erro (Error)*: é um desvio do valor atual para o valor esperado. Representa o
+engano cometido por pessoas.
+
+*Falha (Fault)*: é um passo, processo ou definição de dados incorreta de um
+programa de computador que o faz se comportar de maneira não intencional ou
+inesperada. É o resultado do *erro*.
+
+*Bug*: é uma evidência de falha no programa.
+
+*Fracasso (Failure)*: é a incapacidade de um sistema ou de um componente para
+executar suas funções exigidas, dentro dos requisitos de desempenho
+especificados. O fracasso ocorre quando uma falha é executada.
+
+*Defeito (Defect)*: é um erro de codificação ou lógica que faz um programa
+funcionar mal ou produzir resultados incorretos ou inesperados. Um defeito é
+detectado quando um fracasso é observado.
+
+Vamos ilustrar estes conceitos com um exemplo. Suponha o seguinte código:
+
+```java
+public class SomaDoisNumeros {
+  public static void main(String[] args) {
+    int valor1, valor2, resultado;
+
+    valor1 = 5;
+    valor2 = 3;
+    resultado = valor1 - valor2;
+
+    JOptionPane.showMessageDialog(null, "O resultado de 5 + 3 = " + resultado);
+  }
+}
+```
+Após compilar e executar este programa observa-se que é exibida a seguinte
+mensagem:
+
+```
+O resultado de 5 + 3 = 2
+```
+
+
+
 
 ## Referências
 
 [1] Sergio Taborda. Exceções: conceitos https://sergiotaborda.wordpress.com/desenvolvimento-de-software/java/trabalhando-com-excecoes-conceitos/
 [2] Sergio Taborda. Exceções: Boas Práticas, Más Práticas https://sergiotaborda.wordpress.com/desenvolvimento-de-software/java/excecoes-boas-praticas-mas-praticas/
 [3] What is a Exception? https://docs.oracle.com/javase/tutorial/essential/exceptions/definition.html
+[4] Difference between error, fault, bug, failure and defect. http://softwaretestingbykunti.blogspot.com.br/2012/11/difference-between-error-fault-bug.html
