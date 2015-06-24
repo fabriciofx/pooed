@@ -24,7 +24,7 @@ um programa, que interrompe o fluxo normal de excecução das
 instruções.
 
 
-# 1.3 Casos de Uso
+## 1.3 Casos de Uso
 
 Observe os seguintes exemplos:
 
@@ -52,7 +52,7 @@ problema, como:
 * Onde aconteceu o problema;
 * Por que o problema aconteceu (se possível).
 
-## 1.3 Sintaxe
+## 1.4 Sintaxe
 
 ```java
 try {
@@ -94,7 +94,7 @@ Observações:
 3. Só é possível ter UM ```finally```.
 
 
-## 1.4 Tipos de Exceções
+## 1.5 Tipos de Exceções
 
 Em Java existem três tipos de exceções:
 
@@ -108,7 +108,7 @@ desenvolvedor deve lidar com elas.
 Todas estas classes são filhas de Throwable.
 
 
-## 1.5 Exceções Mais Comuns
+## 1.6 Exceções Mais Comuns
 
 Existem diversas exceções já implementadas na plataforma Java.
 Entre as mais comuns, temos:
@@ -127,7 +127,7 @@ quando o programa tem que interagir com o ambiente em que
 executa, por exemplo com o sistema de arquivos ou a rede.
 
 
-## 1.6 IllegalArgumentException vs NullPointerException
+## 1.7 IllegalArgumentException vs NullPointerException
 
 Uma dúvida que aparece com frequência é qual exceção utilizar
 para verificar se um determinado parâmetro passado a um
