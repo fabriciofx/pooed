@@ -113,10 +113,16 @@ Todas estas classes são filhas de Throwable.
 Existem diversas exceções já implementadas na plataforma Java.
 Entre as mais comuns, temos:
 
-|Exceção | Tipo | Utilização |
-|--------|------|------------|
-|IllegalArgumentException | RuntimeException | Quando algum argumento inválido é passado para um método |
-|NullPointerException | RuntimeException | Quando algum argumento em um método é nulo (null) |
+| Exceção | Quando Utilizar |
+|---------|-----------------|
+| NullPointerException | O valor de um parâmetro é nulo, quando não deveria ser |
+| IllegalArgumentException | O valor de um parâmetro não nulo é inapropriado |
+| IllegalStateException | O estado do objeto é inapropriado para a invocação do método |
+| IndexOutOfBoundsException | O valor do índice do parâmetro está fora do intervalo |
+| ConcurrentModificationException | A modificação concorrente de um objeto foi detectada onde é proibida |
+| UnsupportedOperationException | O objeto não suporta a invocação do método |
+
+Vamos ilustrar a utilização destas exceções.
 
 
 ### Exceção Verificada (Checked Exception)
