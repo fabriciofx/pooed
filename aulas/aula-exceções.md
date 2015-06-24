@@ -17,11 +17,33 @@ fazer certas verificações, como:
 
 ## 1.2 Definição
 
-De acordo com [3] uma exceção pode ser definida como:
+De acordo com [3] temos:
 
 > Uma exceção é um evento que ocorre durante a execução de
-um programa que interrompe o fluxo normal de excecução das
-instruções deste programa.
+um programa, que interrompe o fluxo normal de excecução das
+instruções.
+
+
+# 1.3 Casos de Uso
+
+Observe os seguintes exemplos:
+
+```java
+public class TesteExcecao1 {
+  public static void main(String[] args) {
+    // Cria uma representação de um arquivo texto
+    File arquivo = new File("texto.txt");
+    // Lê todas as linhas de texto do arquivo e armazena na
+    // coleção linhas
+    List<String> linhas = Files.readAllLines(arquivo.toPath(), "UTF-8");
+    ...
+  }
+}
+```
+E se na linha `File arquivo = new File("texto.txt");` o arquivo
+texto.txt não existisse? Ou se ele estivesse localizado em
+um lugar diferente do esperado?
+
 
 A exceção carrega consigo informações importantes sobre este
 problema, como:
@@ -72,7 +94,7 @@ Observações:
 3. Só é possível ter UM ```finally```.
 
 
-## Tipos de Exceções
+## 1.4 Tipos de Exceções
 
 Em Java existem três tipos de exceções:
 
@@ -86,7 +108,7 @@ desenvolvedor deve lidar com elas.
 Todas estas classes são filhas de Throwable.
 
 
-## Exceções Mais Comuns
+## 1.5 Exceções Mais Comuns
 
 Existem diversas exceções já implementadas na plataforma Java.
 Entre as mais comuns, temos:
@@ -103,6 +125,36 @@ Entre as mais comuns, temos:
 esquivar de tratá-la imediatamente. Este tipo de situação existe
 quando o programa tem que interagir com o ambiente em que
 executa, por exemplo com o sistema de arquivos ou a rede.
+
+
+## 1.6 IllegalArgumentException vs NullPointerException
+
+Uma dúvida que aparece com frequência é qual exceção utilizar
+para verificar se um determinado parâmetro passado a um
+método é nulo ou não. Acompanhe o exemplo abaixo:
+
+```java
+public class Pessoa {
+  private final String nome;
+  private final LocalDate nascimento;
+
+  public Pessoa(final String nome, final LocalDate nascimento) {
+    this.nome = nome;
+    this.nascimento = nascimento;
+  }
+
+  // Outros métodos
+}
+```
+Neste exemplo, temos uma classe que representa uma `Pessoa` e,
+obrigatoriamente, esta pessoa deve possuir um nome e uma data
+de nascimento. A questão é: quem garante que o parâmetro `nome`
+ou o parâmetro `nascimento` são válidos? Assim, a instrução
+```java
+Pessoa ana = new Pessoa(null, null);
+```
+é perfeitamente válida.
+
 
 
 ## Referências
