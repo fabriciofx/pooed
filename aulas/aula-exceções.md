@@ -1,13 +1,13 @@
 # 1. Exceções
 
-Neste capítulo vamos estudar o conceito de **exceção**, que é
-uma importante ferramenta das linguagens de programação para o
-tratamento de erros em um programa de computador.
+Neste capítulo vamos estudar o conceito de *exceção*, que é uma importante
+ferramenta das linguagens de programação para o tratamento de erros em um
+programa de computador.
 
 ## 1.1 Motivação
 
-Frequentemente um desenvolvedor depara-se com a necessidade de
-fazer certas verificações, como:
+Frequentemente um desenvolvedor depara-se com a necessidade de fazer certas
+verificações, como:
 
 * Se antes de ler um arquivo, o mesmo existe;
 * Se uma conexão com um banco de dados remoto está aberta;
@@ -19,9 +19,8 @@ fazer certas verificações, como:
 
 De acordo com [3] temos:
 
-> Uma exceção é um evento que ocorre durante a execução de
-um programa, interrompendo o fluxo normal de excecução das
-instruções.
+> Uma exceção é um evento que ocorre durante a execução de um programa,
+interrompendo o fluxo normal de excecução das instruções.
 
 
 ## 1.3 Casos de Uso
@@ -40,10 +39,8 @@ public class TesteExcecao1 {
   }
 }
 ```
-E se na linha `File arquivo = new File("texto.txt");` o arquivo
-texto.txt não existisse? Ou se ele estivesse localizado em
-um lugar diferente do esperado?
-
+E se na linha `File arquivo = new File("texto.txt");` o arquivo texto.txt não
+existisse? Ou se ele estivesse localizado em um lugar diferente do esperado?
 
 A exceção carrega consigo informações importantes sobre este
 problema, como:
@@ -102,8 +99,8 @@ Em Java existem três tipos de exceções:
 * Falha (classe RuntimeException)
 * Exceção de Contingência (classe Exception)
 
-O propósito destes tipos é lidar com diferentes formas que o
-desenvolvedor deve lidar com elas.
+O propósito destes tipos é lidar com diferentes formas que o desenvolvedor deve
+lidar com elas.
 
 Todas estas classes são filhas de Throwable.
 
@@ -127,10 +124,9 @@ Vamos ilustrar a utilização destas exceções.
 
 ### Exceção Verificada (Checked Exception)
 
-É uma condição tão importante que o programador não deve se
-esquivar de tratá-la imediatamente. Este tipo de situação existe
-quando o programa tem que interagir com o ambiente em que
-executa, por exemplo com o sistema de arquivos ou a rede.
+É uma condição tão importante que o programador não deve se esquivar de tratá-la
+imediatamente. Este tipo de situação existe quando o programa tem que interagir
+com o ambiente em que executa, por exemplo com o sistema de arquivos ou a rede.
 
 
 ## 1.7 IllegalArgumentException vs NullPointerException
@@ -152,10 +148,10 @@ public class Pessoa {
   // Outros métodos
 }
 ```
-Neste exemplo, temos uma classe que representa uma `Pessoa` e,
-obrigatoriamente, esta pessoa deve possuir um nome e uma data
-de nascimento. A questão é: quem garante que o parâmetro `nome`
-ou o parâmetro `nascimento` são válidos? Assim, a instrução
+Neste exemplo, temos uma classe que representa uma `Pessoa` e, obrigatoriamente,
+esta pessoa deve possuir um nome e uma data de nascimento. A questão é: quem
+garante que o parâmetro `nome` ou o parâmetro `nascimento` são válidos? Assim,
+a instrução
 ```java
 Pessoa ana = new Pessoa(null, null);
 ```
@@ -166,20 +162,20 @@ Pessoa ana = new Pessoa(null, null);
 
 De acordo com [4] temos as seguintes definições para os termos acima:
 
-*Erro (Error)*: é um desvio do valor atual para o valor esperado. Representa o
+**Erro (Error)**: é um desvio do valor atual para o valor esperado. Representa o
 engano cometido por pessoas.
 
-*Falha (Fault)*: é um passo, processo ou definição de dados incorreta de um
+**Falha (Fault)**: é um passo, processo ou definição de dados incorreta de um
 programa de computador que o faz se comportar de maneira não intencional ou
 inesperada. É o resultado do *erro*.
 
-*Bug*: é uma evidência de falha no programa.
+**Bug**: é uma evidência de falha no programa.
 
-*Fracasso (Failure)*: é a incapacidade de um sistema ou de um componente para
+**Fracasso (Failure)**: é a incapacidade de um sistema ou de um componente para
 executar suas funções exigidas, dentro dos requisitos de desempenho
 especificados. O fracasso ocorre quando uma falha é executada.
 
-*Defeito (Defect)*: é um erro de codificação ou lógica que faz um programa
+**Defeito (Defect)**: é um erro de codificação ou lógica que faz um programa
 funcionar mal ou produzir resultados incorretos ou inesperados. Um defeito é
 detectado quando um fracasso é observado.
 
@@ -204,9 +200,6 @@ mensagem:
 ```
 O resultado de 5 + 3 = 2
 ```
-
-
-
 
 ## Referências
 
