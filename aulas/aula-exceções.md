@@ -158,7 +158,7 @@ Pessoa ana = new Pessoa(null, null);
 é perfeitamente válida.
 
 
-## 1.8 Erro, Falha, Bug, Fracasso e Defeito
+## 1.8 Erro, Falta, Bug, Falha e Defeito
 
 De acordo com [4] temos as seguintes definições para os termos acima:
 
@@ -179,7 +179,8 @@ especificados. O fracasso ocorre quando uma falha é executada.
 funcionar mal ou produzir resultados incorretos ou inesperados. Um defeito é
 detectado quando um fracasso é observado.
 
-Vamos ilustrar estes conceitos com um exemplo. Suponha o seguinte código:
+Vamos ilustrar estes conceitos com um exemplo (adaptado de [4]). Suponha o
+seguinte código:
 
 ```java
 public class SomaDoisNumeros {
