@@ -1,12 +1,8 @@
 # Exceções
 
-Uma exceção é um evento que ocorre quando ocorre algum problema.
-A exceção carrega consigo informações importantes sobre este
-problema, como:
-
-* Qual é o problema;
-* Onde aconteceu o problema;
-* Porque o problema aconteceu (se possível).
+Neste capítulo vamos estudar o conceito de **exceção**, que é
+uma importante ferramenta das linguagens de programação para o
+tratamento de erros em um programa de computador.
 
 ## Motivação
 
@@ -18,6 +14,51 @@ fazer certas verificações, como:
 * Se uma conexão com à Internet foi aberta;
 * Se um determinado parâmetro não é nulo (null);
 * Se uma determinada string não é vazia.
+
+## Definição
+
+De acordo com [3] uma exceção pode ser definida como:
+
+> Uma exceção é um evento que ocorre durante a execução de
+um programa que interrompe o fluxo normal de excecução das
+instruções deste programa.
+
+A exceção carrega consigo informações importantes sobre este
+problema, como:
+
+* Qual é o problema;
+* Onde aconteceu o problema;
+* Por que o problema aconteceu (se possível).
+
+## Sintaxe
+
+```java
+try {
+  Intrução1;
+  Intrução2;
+  ...
+  InstruçãoN;
+} catch (TipoDeExceção1 nome1) {
+  Intrução1;
+  Intrução2;
+  ...
+  InstruçãoN;  
+} catch (TipoDeExceção2 nome2) {
+  Intrução1;
+  Intrução2;
+  ...
+  InstruçãoN;
+.
+.
+.
+} finally {
+  Intrução1;
+  Intrução2;
+  ...
+  InstruçãoN;
+}
+```
+
 
 ## Tipos de Exceções
 
@@ -33,7 +74,7 @@ desenvolvedor deve lidar com elas.
 Todas estas classes são filhas de Throwable.
 
 
-# Exceções Mais Comuns
+## Exceções Mais Comuns
 
 Existem diversas exceções já implementadas na plataforma Java.
 Entre as mais comuns, temos:
@@ -56,3 +97,4 @@ executa, por exemplo com o sistema de arquivos ou a rede.
 
 [1] Sergio Taborda. Exceções: conceitos https://sergiotaborda.wordpress.com/desenvolvimento-de-software/java/trabalhando-com-excecoes-conceitos/
 [2] Sergio Taborda. Exceções: Boas Práticas, Más Práticas https://sergiotaborda.wordpress.com/desenvolvimento-de-software/java/excecoes-boas-praticas-mas-praticas/
+[3] What is a Exception? https://docs.oracle.com/javase/tutorial/essential/exceptions/definition.html
