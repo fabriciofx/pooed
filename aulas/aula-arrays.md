@@ -56,6 +56,17 @@ mais simples de se fazer isso? E há! Para isso, utilizaremos um recurso chamado
 
 ## 1.2 Definição
 
+> Um array é um conjunto de elementos de um mesmo tipo cuja quantidade de
+elementos é fixa.
+
+Observações:
+
+* Os itens que são armazenados em um array são chamados *elementos*;
+* A quantidade de máxima de elementos que podem ser armazenados neste conjunto
+é fixa e deve ser estabelecida na criação deste conjunto;
+* Cada elemento é acessado no conjunto por meio de um número chamado *índice*.
+
+
 ## 1.3 Sintaxe
 
 ```java
@@ -68,3 +79,43 @@ ou
 Tipo[][]...[] identificador;
 identificador = new Tipo[TAM1][TAM2]...[TAMN];
 ```
+
+## 1.4 Exemplos
+
+1. Para criar um conjunto de 10 notas:
+
+```java
+double[] notas = new double[10];
+```
+Em que:
+
+* Os elementos (as notas) que serão armazenados neste conjunto são todos do
+tipo `double`;
+* O conjunto chama-se `notas`;
+* A quantidade de elementos possíveis de serem armazenados é 10;
+
+
+2. Para criar um conjunto de 15 nomes:
+
+```java
+String[] nomes = new String[15];
+```
+Em que:
+
+* Os elementos (os nomes) que serão armazenados neste conjunto são todos do
+tipo `String`;
+* O conjunto chama-se `nomes`;
+* A quantidade de elementos possíveis de serem armazenados é 15;
+
+
+3. Para criar um conjunto de 5 idades:
+
+```java
+int[] idades = new int[5];
+```
+Em que:
+
+* Os elementos (as idades) que serão armazenados neste conjunto são todos do
+tipo `int`;
+* O conjunto chama-se `idades`;
+* A quantidade de elementos possíveis de serem armazenados é 5;
