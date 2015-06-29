@@ -3,6 +3,7 @@
 Neste capítulo vamos estudar o conceito de *array* que é um importante conceito
 de como armazenar elementos de um mesmo tipo.
 
+
 ## 1.1 Motivação
 
 Observe o código abaixo:
@@ -20,7 +21,6 @@ public class CalculaMediaDaTurma {
   }
 }
 ```
-
 Não é difícil perceber o que o programa acima faz. Basicamente ele calcula a
 média aritmética de duas notas. Agora imagine que você queria calcular a média
 de 5 notas. Uma possível modificação a ser feita seria:
@@ -41,9 +41,9 @@ public class CalculaMediaDaTurma {
   }
 }
 ```
-Começou a perceber a dificuldade? E se fossem 10 notas? E se fossem 100? E
-se fossem 1.000.000? Seria bem difícil escrever esse programa, não é mesmo?
-E onde está a dificuldade? Vejamos:
+Começou a perceber a dificuldade? E se fossem 10 notas? E se fossem 100? E se
+fossem 1.000.000? Seria bem difícil escrever esse programa, não é mesmo? E onde
+está a dificuldade? Vejamos:
 
 * Ter que declarar 10, 100, 1.000.000 variáveis (nota1, nota2, ....);
 * Ter que escrever 10, 100, 1.000.000 de instruções do tipo `Double.parseDouble(JOptionPane.showInputDialog("Digite a Nº nota"));`;
@@ -53,6 +53,7 @@ E onde está a dificuldade? Vejamos:
 A esta altura você deve estar se perguntando: será que não existe uma maneira
 mais simples de se fazer isso? E há! Para isso, utilizaremos um recurso chamado
 **array**.
+
 
 ## 1.2 Definição
 
@@ -119,3 +120,47 @@ Em que:
 tipo `int`;
 * O conjunto chama-se `idades`;
 * A quantidade de elementos possíveis de serem armazenados é 5;
+
+
+## 1.5 Exercícios
+
+1. Desenvolva um programa que solicite que o usuário informe 10 números
+inserido-os em um array. A seguir, mostre na tela a soma dos números que foram
+informados.
+
+2. Desenvolva um programa que solicite que o usuário informe 10 números
+inserido-os em um array. A seguir, mostre na tela a média dos números que foram
+informados.
+
+3. Desenvolva um programa que solicite que o usuário informe 10 números
+inteiros, inserido-os em um array. A seguir, mostre na tela o maior e menor
+número que foram informados.
+
+4. Desenvolva um programa que solicite que o usuário informe 10 números
+inserido-os em um array. A seguir, mostre na tela os números em ordem inversa da
+qual foram informados.
+
+5. Desenvolva um programa que solicite que o usuário informe uma palavra e, a
+seguir, mostre na tela quantas consoantes há nesta palavra.
+
+6. Desenvolva um programa que solicite que o usuário informe uma palavra e, a
+seguir, mostre na tela quantas vogais há nesta palavra.
+
+6. Segundo a Wikipedia, um palíndromo é uma palavra ou frase que tenha a
+propriedade de poder ser lida tanto da direita para a esquerda como da esquerda
+para a direita. Como exemplos, temos as palavras ARARA, OVO, RADAR e SOCOS. De
+posse desta informação, desenvolva um programa que solicite que o usuário
+informe uma palavra e informe se esta palavra forma ou não um palíndromo.
+
+7. Imagine uma biblioteca qualquer. Nesta biblioteca há o acervo, que é composto
+de vários módulos. Um módulo é composto por várias estantes. Estas estantes, por
+sua vez, possuem várias prateleiras na qual são colocados os livros. Frequente
+um bibliotecário precisa localizar, por meio do título do livro, em qual módulo,
+estante e prateleira está este livro no acervo. Assim, assumindo que nesta
+biblioteca existem 5 módulos, que cada módulo possui 3 estantes e cada estante
+possui 10 prateleiras, utilize os seus conhecimentos de arrays
+multidimensionais, para implementar um programa de computador que:
+* informe um menu no qual o usuário deverá informar o módulo, a estante, a
+prateleira e o título do livro a ser guardado neste local no acervo;
+* informado um título de um livro qualquer, o programa retorne em qual módulo,
+estante e prateleira aquele livro se encontra.
