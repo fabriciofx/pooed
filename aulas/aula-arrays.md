@@ -63,23 +63,34 @@ elementos é fixa.
 Observações:
 
 * Os itens que são armazenados em um array são chamados *elementos*;
-* A quantidade de máxima de elementos que podem ser armazenados neste conjunto
+* A quantidade máxima de elementos que podem ser armazenados neste conjunto
 é fixa e deve ser estabelecida na criação deste conjunto;
-* Cada elemento é acessado no conjunto por meio de um número chamado *índice*.
+* Cada elemento é acessado *individualmente* no conjunto por meio de um número
+chamado *índice* (ou, em inglês, *index*).
 
 
 ## 1.3 Sintaxe
 
 ```java
-Tipo[][]...[] identificador = new Tipo[TAM1][TAM2]...[TAMN];
+Tipo[] identificador = new Tipo[TAMANHO];
 ```
 
 ou
 
 ```java
-Tipo[][]...[] identificador;
-identificador = new Tipo[TAM1][TAM2]...[TAMN];
+Tipo[] identificador;
+identificador = new Tipo[TAMANHO];
 ```
+
+Em que:
+
+* `Tipo[]`: está declarado que será criado um conjunto de elementos de um
+determinado Tipo de dado (ex.: `int`, `double`, `boolean`, `String`, etc);
+* `identificador`: indica qual será o *"nome"* deste conjunto (ex.: `notas`,
+`nomes`, `letras`, `idades`, etc);
+* `TAMANHO`: indica a quantidade de elementos máximo que pode ser colocada neste
+conjunto.
+
 
 ## 1.4 Exemplos
 
@@ -93,7 +104,7 @@ Em que:
 * Os elementos (as notas) que serão armazenados neste conjunto são todos do
 tipo `double`;
 * O conjunto chama-se `notas`;
-* A quantidade de elementos possíveis de serem armazenados é 10;
+* A quantidade máxima de elementos possíveis de serem armazenados é 10;
 
 
 2. Para criar um conjunto de 15 nomes:
@@ -106,7 +117,7 @@ Em que:
 * Os elementos (os nomes) que serão armazenados neste conjunto são todos do
 tipo `String`;
 * O conjunto chama-se `nomes`;
-* A quantidade de elementos possíveis de serem armazenados é 15;
+* A quantidade máxima de elementos possíveis de serem armazenados é 15;
 
 
 3. Para criar um conjunto de 5 idades:
@@ -119,7 +130,7 @@ Em que:
 * Os elementos (as idades) que serão armazenados neste conjunto são todos do
 tipo `int`;
 * O conjunto chama-se `idades`;
-* A quantidade de elementos possíveis de serem armazenados é 5;
+* A quantidade máxima de elementos possíveis de serem armazenados é 5;
 
 
 ## 1.5 Exercícios
@@ -159,10 +170,8 @@ um bibliotecário precisa localizar, por meio do título do livro, em qual módu
 estante e prateleira está este livro no acervo. Assim, assumindo que nesta
 biblioteca existem 5 módulos, que cada módulo possui 3 estantes e cada estante
 possui 10 prateleiras, utilize os seus conhecimentos de arrays
-multidimensionais, para implementar um programa de computador que:
-
-a) informe um menu no qual o usuário deverá informar o módulo, a estante, a
-prateleira e o título do livro a ser guardado neste local no acervo;
-
-b) informado um título de um livro qualquer, o programa retorne em qual módulo,
-estante e prateleira aquele livro se encontra.
+multidimensionais, para implementar um programa de computador que: a) informe um
+menu no qual o usuário deverá informar o módulo, a estante, a prateleira e o
+título do livro a ser guardado neste local no acervo; b) informado um título de
+um livro qualquer, o programa retorne em qual módulo, estante e prateleira
+aquele livro se encontra.
