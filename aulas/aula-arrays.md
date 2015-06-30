@@ -168,8 +168,8 @@ um bibliotecário precisa localizar, por meio do título do livro, em qual módu
 estante e prateleira está este livro no acervo. Assim, assumindo que nesta
 biblioteca existem 5 módulos, que cada módulo possui 3 estantes e cada estante
 possui 10 prateleiras, utilize os seus conhecimentos de arrays
-multidimensionais, para implementar um programa de computador que: a) informe um
-menu no qual o usuário deverá informar o módulo, a estante, a prateleira e o
-título do livro a ser guardado neste local no acervo; b) informado um título de
-um livro qualquer, o programa retorne em qual módulo, estante e prateleira
-aquele livro se encontra.
+multidimensionais, para implementar um programa de computador que:
+  * informe um menu no qual o usuário deverá informar o módulo, a estante, a
+  prateleira e o título do livro a ser guardado neste local no acervo;  
+  * informado um título de um livro qualquer, o programa retorne em qual módulo,
+estante e prateleira aquele livro se encontra.
