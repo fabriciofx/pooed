@@ -108,28 +108,27 @@ conjunto.
 
 2. Para criar um conjunto de 15 nomes:
 
-```java
-String[] nomes = new String[15];
-```
-Em que:
+  ```java
+  String[] nomes = new String[15];
+  ```
+  Em que:
 
-* Os elementos (os nomes) que serão armazenados neste conjunto são todos do
-tipo `String`;
-* O conjunto chama-se `nomes`;
-* A quantidade máxima de elementos possíveis de serem armazenados é 15;
-
+  * Os elementos (os nomes) que serão armazenados neste conjunto são todos do
+  tipo `String`;
+  * O conjunto chama-se `nomes`;
+  * A quantidade máxima de elementos possíveis de serem armazenados é 15;
 
 3. Para criar um conjunto de 5 idades:
 
-```java
-int[] idades = new int[5];
-```
-Em que:
+  ```java
+  int[] idades = new int[5];
+  ```
+  Em que:
 
-* Os elementos (as idades) que serão armazenados neste conjunto são todos do
-tipo `int`;
-* O conjunto chama-se `idades`;
-* A quantidade máxima de elementos possíveis de serem armazenados é 5;
+  * Os elementos (as idades) que serão armazenados neste conjunto são todos do
+  tipo `int`;
+  * O conjunto chama-se `idades`;
+  * A quantidade máxima de elementos possíveis de serem armazenados é 5;
 
 
 ## 1.5 Exercícios
