@@ -123,12 +123,12 @@ conjunto.
   ```java
   int[] idades = new int[5];
   ```
-  Em que:
+Em que:
 
-  * Os elementos (as idades) que serão armazenados neste conjunto são todos do
-  tipo `int`;
-  * O conjunto chama-se `idades`;
-  * A quantidade máxima de elementos possíveis de serem armazenados é 5;
+* Os elementos (as idades) que serão armazenados neste conjunto são todos do
+tipo `int`;
+* O conjunto chama-se `idades`;
+* A quantidade máxima de elementos possíveis de serem armazenados é 5;
 
 
 ## 1.5 Exercícios
