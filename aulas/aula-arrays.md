@@ -146,13 +146,13 @@ seguir, mostre na tela quantas consoantes há nesta palavra.
 6. Desenvolva um programa que solicite que o usuário informe uma palavra e, a
 seguir, mostre na tela quantas vogais há nesta palavra.
 
-6. Segundo a Wikipedia, um palíndromo é uma palavra ou frase que tenha a
+7. Segundo a Wikipedia, um palíndromo é uma palavra ou frase que tenha a
 propriedade de poder ser lida tanto da direita para a esquerda como da esquerda
 para a direita. Como exemplos, temos as palavras ARARA, OVO, RADAR e SOCOS. De
 posse desta informação, desenvolva um programa que solicite que o usuário
 informe uma palavra e informe se esta palavra forma ou não um palíndromo.
 
-7. Imagine uma biblioteca qualquer. Nesta biblioteca há o acervo, que é composto
+8. Imagine uma biblioteca qualquer. Nesta biblioteca há o acervo, que é composto
 de vários módulos. Um módulo é composto por várias estantes. Estas estantes, por
 sua vez, possuem várias prateleiras na qual são colocados os livros. Frequente
 um bibliotecário precisa localizar, por meio do título do livro, em qual módulo,
