@@ -96,15 +96,15 @@ conjunto.
 
 1. Para criar um conjunto de 10 notas:
 
-```java
-double[] notas = new double[10];
-```
-Em que:
+    ```java
+    double[] notas = new double[10];
+    ```
+    Em que:
 
-* Os elementos (as notas) que serão armazenados neste conjunto são todos do
-tipo `double`;
-* O conjunto chama-se `notas`;
-* A quantidade máxima de elementos possíveis de serem armazenados é 10; 
+    * Os elementos (as notas) que serão armazenados neste conjunto são todos do
+    tipo `double`;
+    * O conjunto chama-se `notas`;
+    * A quantidade máxima de elementos possíveis de serem armazenados é 10;
 
 2. Para criar um conjunto de 15 nomes:
 
