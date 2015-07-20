@@ -61,13 +61,10 @@ public class Multiplicacao {
 	}
 	
 	public static void main(String[] args) {
-		int[][] A1 = {{2, 3}, {0, 1}, {-1, 4}};
-		int[][] B1 = {{1, 2, 3}, {-2, 0, 4}};
+		int[][] A = {{1, 2, 3}, {-2, 0, 4}};
+		int[][] B = {{2, 3}, {0, 1}, {-1, 4}};
 		
-		int[][] C1 = multiplica(A1, B1);
-		mostra(C1);
-		
-		int[][] C2 = multiplica(B1, A1);
-		mostra(C2);
+		int[][] R = multiplica(A, B);
+		mostra(R);
 	}
 }
