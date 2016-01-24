@@ -24,19 +24,13 @@ public class CLI implements UI {
 
 	@Override
 	public int leInteiro(String mensagem, String mensagemErro) {
-		boolean valorInvalido = true;
-		int valor = 0;
-
-		do {
+		while (true) {
 			try {
 				String s = leString(mensagem);
-				valor = Integer.parseInt(s);
-				valorInvalido = false;
+				return Integer.parseInt(s);
 			} catch (NumberFormatException e) {
 				mostra(mensagemErro);
 			}
-		} while (valorInvalido);
-
-		return valor;
+		}
 	}
 }
