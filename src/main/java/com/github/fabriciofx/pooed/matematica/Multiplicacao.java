@@ -8,7 +8,7 @@ public class Multiplicacao implements Operacao {
 	}
 
 	@Override
-	public double getResultado() {
+	public double resultado() {
 		double r = 1.0;
 
 		for (double n : numeros) {
@@ -20,6 +20,6 @@ public class Multiplicacao implements Operacao {
 	
 	@Override
 	public String toString() {
-		return getResultado() + "";
+		return resultado() + "";
 	}
 }
