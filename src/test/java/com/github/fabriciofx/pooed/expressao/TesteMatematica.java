@@ -1,8 +1,12 @@
-package com.github.fabriciofx.pooed.matematica;
+package com.github.fabriciofx.pooed.expressao;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import com.github.fabriciofx.pooed.expressao.Multiplicacao;
+import com.github.fabriciofx.pooed.expressao.Operacao;
+import com.github.fabriciofx.pooed.expressao.Soma;
 
 public class TesteMatematica {
 	@Test

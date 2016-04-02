@@ -1,4 +1,4 @@
-package com.github.fabriciofx.pooed.matematica;
+package com.github.fabriciofx.pooed.expressao;
 
 public interface Operacao {
 	public double resultado();

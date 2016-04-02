@@ -1,4 +1,4 @@
-package com.github.fabriciofx.pooed.matematica;
+package com.github.fabriciofx.pooed.expressao;
 
 public class Soma implements Operacao {
 	private double[] numeros;

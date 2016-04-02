@@ -1,4 +1,4 @@
-package com.github.fabriciofx.pooed.matematica;
+package com.github.fabriciofx.pooed.expressao;
 
 public class Multiplicacao implements Operacao {
 	private double[] numeros;
