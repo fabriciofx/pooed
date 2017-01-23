@@ -9,7 +9,7 @@ import java.util.List;
 import javax.swing.JComponent;
 
 public class Quadro extends JComponent {
-	private final List<Desenho> desenhos;
+	private List<Desenho> desenhos;
 
 	public Quadro(final Desenho... desenhos) {
 		this(Arrays.asList(desenhos));
@@ -19,11 +19,12 @@ public class Quadro extends JComponent {
 		this.desenhos = desenhos;
 	}
 
-	public void paint(final Graphics g) {
-		final Graphics2D tela = (Graphics2D) g;
+	@Override
+	public void paint(Graphics g) {
+		Graphics2D tela = (Graphics2D) g;
 		tela.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
 				RenderingHints.VALUE_ANTIALIAS_ON);
-		for (final Desenho s : desenhos) {
+		for (Desenho s : desenhos) {
 			s.desenhe(tela);
 		}
 	}
